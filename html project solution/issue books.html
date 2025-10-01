@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue BookS: City Library Management System</title>
+</head>
+
+<body>
+    <header>
+        <h1>City Library Management System</h1>
+        <nav>
+            <a href="/html project solution/index.html">Home</a>
+            <a href="/html project solution/books.html ">Books</a>
+            <a href="/html project solution/members.html ">Members</a>
+            <a href="/html project solution/issue books.html ">Issue Books</a>
+            <a href="/html project solution/search.html ">Search</a>
+        </nav>
+    </header>
+    <h1>Issue Books</h1>
+    <h2>Issue New Book</h2>
+
+    <form method="post" action="/html project solution/form/Issue Books/Issue New Book">
+        <table cellpadding="5">
+            <tr>
+                <td><label>Member ID:</label></td>
+                <td><input type="text" name="member id"></td>
+            </tr>
+            <tr>
+                <td><label>Book ID:</label></td>
+                <td><input type="text" name="book id"></td>
+            </tr>
+            <tr>
+                <td> <label>Issue Date:</label></td>
+                <td> <input type="date" name="issue date"></td>
+            </tr>
+            <tr>
+                <td><label>Return Date:</label></td>
+                <td><input type="date" name="Return Date"></td>
+            </tr>
+            <tr>
+                <td rowspan="2"><Input type="submit" value="Issue Book"></td>
+            </tr>
+        </table>
+    </form>
+<br>
+
+    <form method="post" action="/html project solution/form/Issue Books/Issue New Book">
+        <div>
+            <label>Member ID:</label>
+            <input type="text" name="member id">
+        </div>
+        <div>
+            <label>Book ID:</label>
+            <input type="text" name="book id">
+        </div>
+        <div>
+            <label>Issue Date:</label>
+            <input type="date" name="issue date">
+        </div>
+        <div>
+            <label>Return Date:</label>
+            <input type="date" name="Return Date">
+        </div>
+        <div>
+            <Input type="submit" value="Issue Book">
+        </div>
+    </form>
+
+    <br>
+    <h2>Currently Issued Books</h2>
+    <table border="1" cellpadding="15">
+        <thead>
+            <tr>
+                <th>Issue ID</th>
+                <th>Member Name</th>
+                <th>Book Title</th>
+                <th>Issue Date</th>
+                <th>Return Date</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>I001</td>
+                <td>John Doe</td>
+                <td> Physics Book</td>
+                <td>Issue Date</td>
+                <td>Return Date</td>
+                <td>Status</td>
+            </tr>
+            <tr>
+                <td>I002</td>
+                <td>Jane Smith</td>
+                <td>Java Programming</td>
+                <td>2025-09-20</td>
+                <td>2025-10-20</td>
+                <td>Issued</td>
+            </tr>
+        </tbody>
+        <h2>Retrun Book</h2>
+
+    </table>
+
+    <form method="post" action="/html project solution/form/Issue Books/Retrun Book">
+        </div>
+        <div>
+            <label>Issue ID:</label>
+            <input type="text" name="issue id">
+        </div>
+        <div>
+            <label>Return Date:</label>
+            <input type="date" name="return date">
+        </div>
+        <div>
+            <label>Fine (if any)</label>
+            <input type="text" name="fine">
+        </div>
+        <div>
+            <Input type="submit" value="Return Book">
+        </div>
+
+    </form>
+
+</body>
+
+</html>

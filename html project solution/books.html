@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books: City Library Management System</title>
+</head>
+
+<body>
+    <header>
+        <h1>City Library Management System</h1>
+        <nav>
+            <a href="/html project solution/index.html">Home
+            </a>
+            <a href="/html project solution/books.html ">Books</a>
+            <a href="/html project solution/members.html ">Members</a>
+            <a href="/html project solution/issue books.html ">Issue Books</a>
+            <a href="/html project solution/search.html ">Search</a>
+        </nav>
+    </header>
+    <h1>
+        Books Management
+    </h1>
+    <h2>Add New Book</h2>
+    <form method="post" action="/html project solution/form/Add New Book/Addnew">
+        <div>
+            <label>Book ID :</label>
+            <input type="text" name="Book ID"  required>
+        </div>
+        <div>
+            <label>Title :</label>
+            <input type="text" name="Title" required>
+        </div>
+        <div>
+            <label>Author :</label>
+            <input type="text" name="Author">
+        </div>
+        <div>
+            <label>Category :</label>
+            <select name="Category">
+                <option value="Fiction"> Fiction</option>
+                <option value="Fantasy">Fantasy </option>
+                <option value="Science Fiction"> Science Fiction</option>
+                <option value="Mystery/Thriller"> Mystery/Thriller</option>
+                <option value="Romance"> Romance</option>
+                <option value="Self-Help">Self-Help </option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Add book">
+        </div>
+    </form>
+    <h2>Book List</h2>
+    <table border="1" cellpadding="5">
+
+        <thead>
+            <tr>
+                <th>Book ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Category</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>B001</td>
+                <td>Harry Potter</td>
+                <td>J.k. Rowling</td>
+                <td>Fiction</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>B002</td>
+                <td>Physics Book</td>
+                <td>Einstein</td>
+                <td>Science</td>
+                <td>Issued</td>
+            </tr>
+            <tr>
+                <td>B003</td>
+                <td>World War 2</td>
+                <td>John Smith</td>
+                <td>History</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>B004</td>
+                <td>Java Programming</td>
+                <td>James Gosling</td>
+                <td>Technology</td>
+                <td>Available</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+
+</html>

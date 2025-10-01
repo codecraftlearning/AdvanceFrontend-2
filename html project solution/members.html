@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members : City Library Management System</title>
+</head>
+
+<body>
+    <header>
+        <h1>City Library Management System</h1>
+        <nav>
+            <a href="/html project solution/index.html">Home
+            </a>
+            <a href="/html project solution/books.html ">Books</a>
+            <a href="/html project solution/members.html ">Members</a>
+            <a href="/html project solution/issue books.html ">Issue Books</a>
+            <a href="/html project solution/search.html ">Search</a>
+        </nav>
+    </header>
+
+    <h1>Member Enrolment</h1>
+   
+    <form method="post" action="/html project solution/form/Add Member">
+        <div>
+            <label> Member ID: </label>
+            <input type="text" name="Member" required>
+        </div>
+        <div>
+            <label> Name: </label>
+            <input type="text"  name="name">
+        </div>
+        <div>
+            <label> Phone: </label>
+            <input type="tel"  name="phone">
+        </div>
+        <div>
+            <label>Email: </label>
+            <input type="email" name="email" required>
+        </div>
+        <div>
+            <label> Address </label>
+            <textarea name="Address" id="Address" style="height: auto; "></textarea>
+        </div>
+        <div></div>
+        <input type="submit" value="Add Members">
+        </div>
+    </form>
+    <h2>Members List</h2>
+    <table border="1" cellpadding="5">
+
+        <thead>
+
+            <tr>
+                <th>Member ID</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Status</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>M001</td>
+                <td>John Doc</td>
+                <td>123-456-7890</td>
+                <td>John@gmail.com</td>
+                <td>Active</td>
+            </tr>
+
+            <tr>
+                <td>M002</td>
+                <td>Jane Smith</td>
+                <td>098-765-4321</td>
+                <td>Jane@email.com</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>M003</td>
+                <td>Bob Johnson</td>
+                <td>555-123-4567</td>
+                <td>bOB@email.com</td>
+                <td>Active</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</body>
+
+</html>

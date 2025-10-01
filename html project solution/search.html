@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search : City Library Management System</title>
+</head>
+
+<body>
+    <header>
+        <h1>City Library Management System</h1>
+        <nav>
+            <a href="/html project solution/index.html">Home
+            </a>
+            <a href="/html project solution/books.html ">Books</a>
+            <a href="/html project solution/members.html ">Members</a>
+            <a href="/html project solution/issue books.html ">Issue Books</a>
+            <a href="/html project solution/search.html ">Search</a>
+        </nav>
+    </header>
+    <h1>Search Library</h1>
+    <br>
+    <h2>Search Books</h2>
+
+    <Form method="get">
+        <div><label>Search by:</label><select>
+                <option value="Title"> Title</option>
+                <option value="Author"> Author</option>
+                <option value="categories">categories</option>
+                <option value="Genere">Genere</option>
+            </select>
+        </div>
+
+        <div><Label>Search Term:</Label>
+            <input type="text">
+        </div>
+        <div><input type="submit" value="Search Book"></div>
+    </Form>
+    <br>
+    <h2>Search Member</h2>
+
+    <Form method="get">
+        <div><label>Search by:</label><select>
+                <option value="Name"> Name</option>
+                <option value="Gender"> Gender</option>
+            </select>
+        </div>
+        <div><Label>Search Term:</Label>
+            <input type="text">
+        </div>
+        <div><input type="submit" value="Search Member"></div>
+    </Form>
+    <br>
+    <h2>
+        Search Results
+    </h2>
+    <p>Search Results will Appear here after you perform a search. </p>
+
+    <br>
+    <h3>
+        Sample Book Results:
+    </h3>
+    <table border="1" cellpadding="15">
+        <thead>
+            <tr>
+                <td>Book ID</td>
+                <td>Title</td>
+                <td>Author</td>
+                <td>Status</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>B001</td>
+                <td>Harry Potter</td>
+                <td>J.K. ROWLING</td>
+                <td>Available</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h3>
+        Sample Member Results:
+    </h3>
+    <table border="1" cellpadding="15">
+        <thead>
+            <tr>
+                <td>Member ID</td>
+                <td>Name</td>
+                <td>Phone</td>
+                <td>Status</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>M001</td>
+                <td>John Doc</td>
+                <td>123-456-7890/td>
+                <td>Active</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+</body>
+
+</html>
