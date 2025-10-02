@@ -20,36 +20,57 @@
         </nav>
     </header>
     <h1>Search Library</h1>
-    <br>
+    
     <h2>Search Books</h2>
 
     <Form method="get">
-        <div><label>Search by:</label><select>
-                <option value="Title"> Title</option>
-                <option value="Author"> Author</option>
-                <option value="categories">categories</option>
-                <option value="Genere">Genere</option>
-            </select>
-        </div>
-
-        <div><Label>Search Term:</Label>
-            <input type="text">
-        </div>
-        <div><input type="submit" value="Search Book"></div>
+        <table cellpadding="5">
+            <tr>
+                <td><label for="search_by">Search by:</label></td>
+                <td>
+                    <select name="search_by" id="search_by">
+                        <option value="title">Title</option>
+                        <option value="author">Author</option>
+                        <option value="categories">Categories</option>
+                        <option value="genre">Genre</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="search_term">Search Term:</label></td>
+                <td><input type="text" name="search_term" id="search_term"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Search Book">
+                </td>
+            </tr>
+        </table>
     </Form>
     <br>
     <h2>Search Member</h2>
 
     <Form method="get">
-        <div><label>Search by:</label><select>
-                <option value="Name"> Name</option>
-                <option value="Gender"> Gender</option>
-            </select>
-        </div>
-        <div><Label>Search Term:</Label>
-            <input type="text">
-        </div>
-        <div><input type="submit" value="Search Member"></div>
+        <table cellpadding="5">
+            <tr>
+                <td><label for="search_by">Search by:</label></td>
+                <td>
+                    <select name="search_by" id="search_by">
+                        <option value="name">Name</option>
+                        <option value="gender">Gender</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="search_term">Search Term:</label></td>
+                <td><input type="text" name="search_term" id="search_term"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Search Member">
+                </td>
+            </tr>
+        </table>
     </Form>
     <br>
     <h2>
@@ -64,10 +85,10 @@
     <table border="1" cellpadding="15">
         <thead>
             <tr>
-                <td>Book ID</td>
-                <td>Title</td>
-                <td>Author</td>
-                <td>Status</td>
+                <th>Book ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Status</th>
             </tr>
         </thead>
         <tbody>
@@ -86,10 +107,10 @@
     <table border="1" cellpadding="15">
         <thead>
             <tr>
-                <td>Member ID</td>
-                <td>Name</td>
-                <td>Phone</td>
-                <td>Status</td>
+                <th>Member ID</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Status</th>
             </tr>
         </thead>
         <tbody>

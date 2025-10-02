@@ -44,29 +44,6 @@
             </tr>
         </table>
     </form>
-<br>
-
-    <form method="post" action="/html project solution/form/Issue Books/Issue New Book">
-        <div>
-            <label>Member ID:</label>
-            <input type="text" name="member id">
-        </div>
-        <div>
-            <label>Book ID:</label>
-            <input type="text" name="book id">
-        </div>
-        <div>
-            <label>Issue Date:</label>
-            <input type="date" name="issue date">
-        </div>
-        <div>
-            <label>Return Date:</label>
-            <input type="date" name="Return Date">
-        </div>
-        <div>
-            <Input type="submit" value="Issue Book">
-        </div>
-    </form>
 
     <br>
     <h2>Currently Issued Books</h2>
@@ -99,28 +76,33 @@
                 <td>Issued</td>
             </tr>
         </tbody>
-        <h2>Retrun Book</h2>
-
     </table>
+    
+    <br>
+
+    <h2>Retrun Book</h2>
 
     <form method="post" action="/html project solution/form/Issue Books/Retrun Book">
-        </div>
-        <div>
-            <label>Issue ID:</label>
-            <input type="text" name="issue id">
-        </div>
-        <div>
-            <label>Return Date:</label>
-            <input type="date" name="return date">
-        </div>
-        <div>
-            <label>Fine (if any)</label>
-            <input type="text" name="fine">
-        </div>
-        <div>
-            <Input type="submit" value="Return Book">
-        </div>
 
+        <table cellpadding="5">
+            <tr>
+                <td><label for="issue_id">Issue ID:</label></td>
+                <td><input type="text" name="issue_id" id="issue_id"></td>
+            </tr>
+            <tr>
+                <td><label for="return_date">Return Date:</label></td>
+                <td><input type="date" name="return_date" id="return_date"></td>
+            </tr>
+            <tr>
+                <td><label for="fine">Fine (if any):</label></td>
+                <td><input type="text" name="fine" id="fine"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Return Book">
+                </td>
+            </tr>
+        </table>
     </form>
 
 </body>

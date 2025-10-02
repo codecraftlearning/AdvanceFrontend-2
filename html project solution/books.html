@@ -11,8 +11,7 @@
     <header>
         <h1>City Library Management System</h1>
         <nav>
-            <a href="/html project solution/index.html">Home
-            </a>
+            <a href="/html project solution/index.html">Home</a>
             <a href="/html project solution/books.html ">Books</a>
             <a href="/html project solution/members.html ">Members</a>
             <a href="/html project solution/issue books.html ">Issue Books</a>
@@ -24,32 +23,38 @@
     </h1>
     <h2>Add New Book</h2>
     <form method="post" action="/html project solution/form/Add New Book/Addnew">
-        <div>
-            <label>Book ID :</label>
-            <input type="text" name="Book ID"  required>
-        </div>
-        <div>
-            <label>Title :</label>
-            <input type="text" name="Title" required>
-        </div>
-        <div>
-            <label>Author :</label>
-            <input type="text" name="Author">
-        </div>
-        <div>
-            <label>Category :</label>
-            <select name="Category">
-                <option value="Fiction"> Fiction</option>
-                <option value="Fantasy">Fantasy </option>
-                <option value="Science Fiction"> Science Fiction</option>
-                <option value="Mystery/Thriller"> Mystery/Thriller</option>
-                <option value="Romance"> Romance</option>
-                <option value="Self-Help">Self-Help </option>
-            </select>
-        </div>
-        <div>
-            <input type="submit" value="Add book">
-        </div>
+        <table cellpadding="5">
+            <tr>
+                <td><label for="book_id">Book ID :</label></td>
+                <td><input type="text" name="book_id" id="book_id" required></td>
+            </tr>
+            <tr>
+                <td><label for="title">Title :</label></td>
+                <td><input type="text" name="title" id="title" required></td>
+            </tr>
+            <tr>
+                <td><label for="author">Author :</label></td>
+                <td><input type="text" name="author" id="author"></td>
+            </tr>
+            <tr>
+                <td><label for="category">Category :</label></td>
+                <td>
+                    <select name="category" id="category">
+                        <option value="Fiction">Fiction</option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="Science Fiction">Science Fiction</option>
+                        <option value="Mystery/Thriller">Mystery/Thriller</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Self-Help">Self-Help</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Add Book">
+                </td>
+            </tr>
+        </table>
     </form>
     <h2>Book List</h2>
     <table border="1" cellpadding="5">

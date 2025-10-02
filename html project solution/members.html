@@ -21,31 +21,35 @@
     </header>
 
     <h1>Member Enrolment</h1>
-   
+
     <form method="post" action="/html project solution/form/Add Member">
-        <div>
-            <label> Member ID: </label>
-            <input type="text" name="Member" required>
-        </div>
-        <div>
-            <label> Name: </label>
-            <input type="text"  name="name">
-        </div>
-        <div>
-            <label> Phone: </label>
-            <input type="tel"  name="phone">
-        </div>
-        <div>
-            <label>Email: </label>
-            <input type="email" name="email" required>
-        </div>
-        <div>
-            <label> Address </label>
-            <textarea name="Address" id="Address" style="height: auto; "></textarea>
-        </div>
-        <div></div>
-        <input type="submit" value="Add Members">
-        </div>
+        <table cellpadding="5">
+            <tr>
+                <td><label for="member_id">Member ID:</label></td>
+                <td><input type="text" name="member_id" id="member_id" required></td>
+            </tr>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone:</label></td>
+                <td><input type="tel" name="phone" id="phone"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><textarea name="address" id="address" style="height:auto;"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" >
+                    <input type="submit" value="Add Member">
+                </td>
+            </tr>
+        </table>
     </form>
     <h2>Members List</h2>
     <table border="1" cellpadding="5">
