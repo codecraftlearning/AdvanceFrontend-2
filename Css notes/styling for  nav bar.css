@@ -1,0 +1,39 @@
+nav{
+    display: flex;
+    background-color: lightblue;
+    height: 30px;
+    width: 550px;
+    margin: none;
+
+}
+
+span{
+   
+    color: darkblue;
+    height: 15px;
+    font-size: 11px;
+    margin-top: 7px;
+    
+}
+
+
+#marginForHome{
+    margin-right: 240px;
+    margin-left: 15px;
+}
+
+#marginForSearch{
+    margin-right: 15px;
+    margin-left:15px
+}
+
+.marginfornav{
+     margin-left:20px
+}
+
+#verticleDiv{
+    height: 250px;
+    width: 100PX;
+    background-color: black;
+    display: block;
+}

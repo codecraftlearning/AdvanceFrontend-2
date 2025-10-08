@@ -1,0 +1,48 @@
+h1{
+    color: darkorange;
+    background-color: rgb(40, 72, 176);
+
+}
+h2{
+    color: coral;
+    background-color: lightgrey;
+}
+p{
+    text-align: center;
+    color: black;
+    background-color: yellow;
+}
+h3{
+    text-align: right;
+    color: aqua;
+    background-color: black;
+}
+
+#center{
+    text-align: center;
+}
+
+#left{
+    text-align: left;
+}
+
+#decorationNone {
+    text-decoration: none;
+}
+
+#decorationUnderline {
+    text-decoration: underline;}
+
+    #uppercase{
+        text-transform: uppercase;
+    }
+
+    #lowercase{
+        text-transform: lowercase;
+    }
+    #capitalize{
+        text-transform: capitalize;
+    }
+    #none{
+        text-transform: none;
+    }

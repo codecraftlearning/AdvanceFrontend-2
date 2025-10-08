@@ -1,0 +1,47 @@
+h1 {
+    color: red;
+}
+
+p {
+    color: rgb(66, 229, 33)
+}
+
+h2 {
+    color: blue;
+}
+
+button {
+    color: blueviolet;
+    background-color: orange;
+}
+
+body {
+    background: rgb(246, 227, 152);
+}
+
+i {
+    color: crimson;
+}
+
+B{
+    color: mediumvioletred;
+}
+
+
+
+#headingThree {
+    color: yellowgreen;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+        'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#headingTwo{
+     color: deeppink;
+
+} 
+
+.classLearn{
+    color: rgb(238, 238, 77);
+    background-color: black;
+    
+}
