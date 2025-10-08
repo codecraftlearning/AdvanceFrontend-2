@@ -1,0 +1,33 @@
+body {
+    margin: 20px;
+    height: 100vh;
+    font-size: 24px;
+}
+
+.border-x {
+    border: 1px solid black;
+}
+
+.box1 {
+    height: 90%;
+    width: 100%;
+}
+
+.para1 {
+    border-color: brown;
+    height: 90%;
+    width: 100vw;
+}
+
+.text1 {
+    font-size: 16px;
+}
+.text2 {
+    font-size: 0.5em;
+}
+.text3 {
+    font-size: 2rem;
+}
+.text4 {
+    font-size: 100%;
+}
