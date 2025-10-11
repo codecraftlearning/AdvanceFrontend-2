@@ -1,0 +1,174 @@
+h1 {
+    color: black;
+
+}
+
+h2 {
+    color: rgb(73, 73, 225);
+}
+
+p {
+    color: rgb(234, 54, 54);
+}
+
+#background {
+    background-color: black;
+}
+
+
+#backgroundImage {
+    display: block;
+    background-image: url('image/image\ .png');
+    height: 200px;
+    width: 200px;
+}
+
+#Textintheimage {
+    font-size: 150px;
+    font-weight: bolder;
+    background-image: url(image/rainbow.jpg);
+    background-clip: text;
+    color: transparent;
+    background-size: contain;
+    background-position: center;
+
+
+
+}
+
+
+.textUnderstanding {
+    background-color: black;
+    color: cyan;
+    display: block;
+    height: 200px;
+    width: 300px;
+}
+
+#textalign {
+    text-align: none;
+}
+
+#textaligncenter {
+    text-align: center;
+}
+
+#textalignLeft {
+    text-align: right;
+
+}
+
+#verticalalignmiddle {
+    vertical-align: middle;
+    line-height: 200px;
+
+}
+
+#verticalaligntop {
+    display: inline-block;
+    vertical-align: top;
+
+
+}
+
+#verticalalignbottom {
+    vertical-align: bottom;
+    line-height: 200px;
+
+}
+
+
+#textSpacing {
+    font-size: large;
+    letter-spacing: 12px;
+
+    word-spacing: 3px;
+
+    line-height: 25px;
+
+}
+
+#TextShadow {
+    color: rgb(15, 14, 14);
+    /* main text color */
+    font-size: 60px;
+
+    text-shadow:
+        0 0 5px #c6f50e,
+        0 0 10px #c6f50e,
+        0 0 20px #c6f50e,
+        0 0 40px #c6f50e;
+}
+
+#textindent00 {
+    text-indent: 150px;
+}
+
+#white-space {
+    white-space: nowrap;
+
+}
+
+#fontFamily {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 29px;
+}
+
+#fontFamily02 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 38px;
+}
+
+#fontWeight {
+    font-weight: 900;
+}
+
+#fontWeight500 {
+    font-weight: 500;
+}
+
+#fontWeight200 {
+    font-weight: 200;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+.demo-box {
+    width: 200px;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+.nowrap-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wrap {
+    white-space: normal;
+    overflow: visible;
+}
+
+.nowrap-visible {
+    white-space: nowrap;
+    overflow: visible;
+}
+
+
+

@@ -2,7 +2,7 @@ nav{
     display: flex;
     background-color: lightblue;
     height: 30px;
-    width: 550px;
+    width: 100%;
     margin: none;
 
 }
@@ -18,8 +18,8 @@ span{
 
 
 #marginForHome{
-    margin-right: 240px;
-    margin-left: 15px;
+    margin-right: 25%;
+    margin-left: 5%;
 }
 
 #marginForSearch{
@@ -28,7 +28,7 @@ span{
 }
 
 .marginfornav{
-     margin-left:20px
+     margin: left 10%;
 }
 
 #verticleDiv{

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text and properties
+    </title>
+    <link rel="stylesheet" href="/css classes/styles/text.css">
+</head>
+
+<body>
+
+    <h1>Text color and background</h1>
+    <h2>Color</h2>
+    <P>Color : color of the text here; red</P>
+    <h2>Background</h2>
+    <P id="background">background of text here; black</P>
+    <h2>background Image</h2>
+    <p id="backgroundImage"> background image present
+        at the back of the text.
+        the heart in the background</p>
+    <h2>Image in the text</h2>
+    <p id="Textintheimage">
+        background-clip: text; “clips” the background to the shape of the text.
+    </p>
+
+    <h1>TEXT ALIGNMENT & DIRECTION</h1>
+    <h2>Text align</h2>
+    <p id="textalign" class="textUnderstanding"> Text align None</p>
+    <p id="textaligncenter" class="textUnderstanding">Text align Center</p>
+    <p id="textalignLeft" class="textUnderstanding"> Text align right</p>
+    <p id="verticalalignmiddle" class="textUnderstanding">
+        vertical align middle need to elaborate the h</p>
+    <p id="verticalaligntop" class="textUnderstanding">
+        vertical align top</p>
+    <p id="verticalalignbottom" class="textUnderstanding">
+        vertical align bottom</p>
+    <h2>Text Spacing</h2>
+    <p id="textSpacing" class="textUnderstanding">
+        letter-spacing
+        Space between letter
+        word-spacing
+        Space between words
+        line-height
+        Space between lines</p>
+    <h2>TextShadow</h2>
+    <p id="TextShadow">
+        Text Shadow - Adds Shadow to Text
+    </p>
+    <h2>Text Indentation</h2>
+    <p id="textindent00">
+        Text Indentation is a CSS property used to indent the first line of a block of text.
+        similarly the the text starts here after 150 px
+    </p>
+    <h2>Text Overflow and Wrapping</h2>
+    <pre>
+white-space      Controls line breaks	                      white-space: nowrap;
+overflow	     Handles text overflow (hidden, scroll)	      overflow: hidden;
+text-overflow  	Shows ellipsis (…) when text overflows	      text-overflow: ellipsis;
+    </pre>
+    
+    <h1>font</h1>
+    <h2>family&Size</h2>
+    <p>There are no of size and font family which can be used. below are2 examples.</p>
+    <p id=fontFamily> Font style/type</p>
+    <p id=fontFamily02> Font Style/type 2</p>
+    <h2>font-weight</h2>
+    <p>Boldness of text</p>
+    <P id=fontWeight>font weight 900</P>
+    <P id=fontWeight500>font weight 500</P>
+    <P id=fontWeight200>font weight 200</P>
+
+
+Explain text-transform vs font-variant.
+    <h1>Interview Questions. </h1>
+    <h2>Difference between em, rem, %, and px for text sizing.</h2>
+    <p>px (Pixels) — Absolute Unit</p>
+    <pre> 
+Fixed size. Doesn’t depend on anything else.
+
+1px = one screen pixel (roughly).
+
+Doesn’t change if parent size or browser zoom changes (except user zoom).</pre>
+<br><br><br>
+<p>em — Relative to Parent’s Font Size</p>
+<pre>
+1em = current element’s parent font size.
+
+So, if the parent is 20px and you set font-size: 2em, it becomes 40px.
+</pre>
+<br><br><br>
+<p>rem — Relative to Root (HTML) Font Size</p>
+<pre>
+1rem = root element (< html >) font size, not parent.
+
+Stays consistent everywhere.
+
+If html { font-size: 10px; }, then 1rem = 10px.
+</pre>
+<br><br><br>
+
+<p>% (Percentage) — Relative to Parent Font Size</p>
+<pre>
+Works like em, but written as a percent.
+
+100% = same as parent’s size.
+
+150% = 1.5 × parent’s size
+</pre>
+
+
+<br><br><br>
+
+  <h3>PX vs EM vs REM vs %</h3>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Unit</th>
+            <th>Relative To</th>
+            <th>Example</th>
+            <th>Changes with Parent?</th>
+            <th>Common Use</th>
+        </tr>
+        <tr>
+            <td>px</td>
+            <td>Nothing (fixed)</td>
+            <td>16px</td>
+            <td>No</td>
+            <td>Fixed-size elements</td>
+        </tr>
+        <tr>
+            <td>em</td>
+            <td>Parent’s font size</td>
+            <td>1.5em</td>
+            <td>Yes</td>
+            <td>Buttons, nested text</td>
+        </tr>
+        <tr>
+            <td>rem</td>
+            <td>Root font size</td>
+            <td>1.5rem</td>
+            <td>No</td>
+            <td>Global scaling, accessibility</td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td>Parent’s font size</td>
+            <td>120%</td>
+            <td>Yes</td>
+            <td>Inline adjustments</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+   
+    <h3>Cover vs Contain</h3>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Property</th>
+            <th>What It Does</th>
+            <th>Crops Image?</th>
+            <th>Fills Entire Area?</th>
+            <th>Leaves Blank Space?</th>
+            <th>Common Use</th>
+        </tr>
+        <tr>
+            <td>cover</td>
+            <td>Scales image to cover entire container</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>Backgrounds, banners</td>
+        </tr>
+        <tr>
+            <td>contain</td>
+            <td>Scales image to fit inside container</td>
+            <td>No</td>
+            <td>No</td>
+            <td>Yes</td>
+            <td>Logos, icons, full view</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <h3>Text Overflow and Wrapping</h3>
+    <table>
+    <tr>
+        <th>Example</th>
+        <th>CSS Properties</th>
+        <th>Result</th>
+    </tr>
+    <tr>
+        <td>Normal Wrap</td>
+        <td>
+            white-space: normal;<br>
+            overflow: visible;<br>
+            text-overflow: none;
+        </td>
+        <td>
+            <div class="demo-box wrap">
+                This is a very long text that will wrap onto multiple lines and no ellipsis will appear.
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>No Wrap, Overflow Visible</td>
+        <td>
+            white-space: nowrap;<br>
+            overflow: visible;<br>
+            text-overflow: none;
+        </td>
+        <td>
+            <div class="demo-box nowrap-visible">
+                This is a very long text that will overflow outside the box but no ellipsis will appear.
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>No Wrap, Ellipsis</td>
+        <td>
+            white-space: nowrap;<br>
+            overflow: hidden;<br>
+            text-overflow: ellipsis;
+        </td>
+        <td>
+            <div class="demo-box nowrap-ellipsis">
+                This is a very long text that will be truncated with an ellipsis if it does not fit.
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+</body>
+</html>
+
+</body>
+</html>
+
+
+
+
+
+</body>
+
+</html>
