@@ -1,55 +1,72 @@
-// adddition of cubes of 3 numbers
-let a = 2;
-let b = 4;
-let c = 4;
+//print all even numbers  from zero to the range provided .
 
-let sumOfCubes = a**3 + b**3 + c**3;
-
-console.log("adddition of cubes of 3 numbers", sumOfCubes);
-
-
-//series sum -> 2, 10 times, print result
-
-let num = 12;
-let times = 20;
+let range = 100;
 let sum = 0;
 
-for (let i = 1; i <= times; i++) {
-  sum += num;
+for (let i=0 ; i<=range ; i++){
+    if (i % 2 === 0){
+        console.log(i);
+         sum = sum + i;}
 }
-console.log("The sum of the series is:", sum);
+console.log ("sum Of All EvenNumbers = ", sum  )
 
-let day = 7;
+//print all odd numbers  from zero to the range provided
 
-switch (day) {
-    case 1:
-        console.log("Monday");
-        break;
+let rangeodd = 50;
+let sum01 = 0;
 
-    case 2:
-        console.log("Tuesday");
-        break;
-
-    case 3:
-        console.log("Wednesday");
-        break;
-
-    case 4:
-        console.log("Thursday");
-        break;
-
-    case 5:
-        console.log("Friday");
-        break;
-
-    case 6:
-        console.log("Saturday");
-        break;
-
-    case 7:
-        console.log("Sunday");
-        break;
-
-    default:
-        console.log("Invalid day number")
+for (let i=0; i<=rangeodd; i++){
+    if (i % 2 !== 0){
+        console.log(i);
+        sum01 = sum01 + i;
+    }
 }
+console.log ("sum Of All Odd Numbers = ", sum01 )
+
+//in a range from zero to provided range add 
+//all even numbers and subtract half of the 
+// sum of odd numbers .
+
+let range00 = 500;
+let evenNoSum = 0;
+let oddNoSum = 0;
+
+for (let i = 0; i <= range00; i++) {
+    if (i % 2 === 0) {
+        //console.log(i);
+        evenNoSum = evenNoSum + i;
+    }
+    }
+console.log("evenNoSum", evenNoSum);
+
+
+for (let i = 0; i <= range00; i++) {
+    if (i % 2 !== 0) {
+       // console.log(i);
+        oddNoSum = oddNoSum + i / 2 ;
+    }
+}
+console.log("oddNoSum ", oddNoSum );
+
+
+let answer = evenNoSum - oddNoSum
+console.log("answer", answer );
+
+
+//check if a number provided is a prime no or not .
+//"print prime if prime .
+// composite if not prime"
+
+
+
+
+
+
+
+
+
+
+
+
+
+

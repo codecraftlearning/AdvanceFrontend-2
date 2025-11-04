@@ -17,3 +17,5 @@ else {
 //  3 in a range from zero to provided range add all even numbers and subtract half of the sum of odd numbers .
 //**4 dont use internet for this **** check if a number provided is a prime no or not .
    //"print prime if prime .composite if not prime"
+
+
