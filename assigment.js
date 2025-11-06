@@ -1,61 +1,66 @@
-//print all even numbers  from zero to the range provided .
+/*
+q1 print all prime no within the given range
+q2 print all the armstrong no within the given range ( exmaple 153 = 1^3 + 5^3 + 3^3 ) 1 + 125 + 27 = 153 ; 
+q3 print fibonacii series wihin the given range   ( 0 1 1 2 3 5 8 13 21 34 55 )
+q4 write a program to reverse a no and stor it as a no only cant be string 
+*/
 
-let range = 100;
-let sum = 0;
+//q1 print all prime no within the given range.
 
-for (let i=0 ; i<=range ; i++){
-    if (i % 2 === 0){
-        console.log(i);
-         sum = sum + i;}
-}
-console.log ("sum Of All EvenNumbers = ", sum  )
 
-//print all odd numbers  from zero to the range provided
+let startingRange = 10;
+let endingRange = 30;
 
-let rangeodd = 50;
-let sum01 = 0;
 
-for (let i=0; i<=rangeodd; i++){
-    if (i % 2 !== 0){
-        console.log(i);
-        sum01 = sum01 + i;
+function prime(startingRange, endingRange) {
+    if (endingRange <= 1 || startingRange > endingRange || startingRange <= 0) {
+        console.log("The range provide isnt correct");
+        return;
+    }
+
+    for (let num = startingRange; num <= endingRange; num++) {
+
+        let isPrime = true;
+
+        for (let i = 2; i <= num / 2; i++) {
+            if (num % i === 0) {
+                isPrime = false;
+                break;
+            }
+        }
+
+        if (isPrime) {
+            console.log(num);
+        }
     }
 }
-console.log ("sum Of All Odd Numbers = ", sum01 )
 
-//in a range from zero to provided range add 
-//all even numbers and subtract half of the 
-// sum of odd numbers .
-
-let range00 = 500;
-let evenNoSum = 0;
-let oddNoSum = 0;
-
-for (let i = 0; i <= range00; i++) {
-    if (i % 2 === 0) {
-        //console.log(i);
-        evenNoSum = evenNoSum + i;
-    }
-    }
-console.log("evenNoSum", evenNoSum);
+prime(startingRange, endingRange);
 
 
-for (let i = 0; i <= range00; i++) {
-    if (i % 2 !== 0) {
-       // console.log(i);
-        oddNoSum = oddNoSum + i / 2 ;
-    }
+/*
+q2 print all the armstrong no within the given range ( exmaple 153 = 1^3 + 5^3 + 3^3 ) 1 + 125 + 27 = 153 ;
+need to lear how to convert  number to strings then again number  // maybe while loop 
+q3 print fibonacii series wihin the given range   ( 0 1 1 2 3 5 8 13 21 34 55 )
+unable to perform the desired annswers are not coming 
+q4 write a program to reverse a no and store it as a no only cant be string 
+// add first 2 nos the add the answer with eding value of the last formula
+
+
+
+let addedSum =  ;
+
+for (let i = startingRange; i <= endingRange; i++ ) {
+    addedSum = startingRange + i  ;
+    console.log("fibonacii =", addedSum);
 }
-console.log("oddNoSum ", oddNoSum );
+    */
 
 
-let answer = evenNoSum - oddNoSum
-console.log("answer", answer );
 
 
-//check if a number provided is a prime no or not .
-//"print prime if prime .
-// composite if not prime"
+
+
 
 
 
