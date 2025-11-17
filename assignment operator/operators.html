@@ -6,7 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="/assignment operator/operators.js"></script>
+    <script>
+        // guess the age of modi ?
+
+let modiAge = 70;
+let guessedAge = prompt("modi age ???");
+
+while (modiAge != guessedAge) {
+    guessedAge = prompt("try again.")
+    if (guessedAge < 0) {
+        if (confirm("do you want to exit ?")) {
+            break
+        }
+    }
+}
+if (guessedAge < 0) {
+    alert("thank you for playing ")
+}
+else { console.log("correct guessed") }
+    </script>
+   
     
 </body>
 </html>

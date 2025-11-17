@@ -1,4 +1,4 @@
-/*for-of loop
+/*for-of loop*/
 
 let string = "learing For of loop";             // value of string
 let size = 0;
@@ -7,7 +7,7 @@ for (let i of string) {                           // iterator -> characters // i
     size++;
 }
 console.log(size); 
-*/
+
 
 //for-in loop
 

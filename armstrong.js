@@ -13,12 +13,12 @@ function isArmStrong(num) {          // 153  , 15   , 1     , 0
     let sum = 0;                     // 0    , 27   , 152   , 153
     let temp = num;                  // 153  , 153  , 153   , 153
     while (num > 0) {                // true , true , true  , false 
-        let reminder = num % 10       // 3    , 5    , 1
-        num = num / 10                  // 15.3 , 1.5  , 0.1
+        let reminder = num % 10      // 3    , 5    , 1
+        num = num / 10               // 15.3 , 1.5  , 0.1
         num = parseInt(num)          // 15   , 1    , 0
-        sum += reminder ** 3          // 9    , 152  , 153
+        sum += reminder ** 3         // 9    , 152  , 153
     }
-    return (sum === temp)                                   //true
+    return (sum === temp)           //true
 }
 
 
