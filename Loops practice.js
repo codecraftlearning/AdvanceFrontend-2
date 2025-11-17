@@ -1,5 +1,5 @@
 //write a program to reverse a no and store it as a no only cant be string
-
+/*
 
 function reverseNumber(num) {          // 271               27                           2                          0 (while breaks here)
     let rev = 0;                       // 0                  1                          17                        172
@@ -32,3 +32,35 @@ function factorial(num) {               //
 }
 
 console.log(factorial(3));
+
+//prime no 
+function isPrime(num) {
+    if (num < 2) {
+        console.log("not prime");
+        return
+    } 
+    for (i = 2; i <= num/2 ; i++) {
+        if (num % i === 0) {
+            console.log("composite");
+            return;
+        }
+    }
+    console.log("Prime");
+}
+
+let num = 1
+
+isPrime(num)
+*/
+
+
+
+// guess the age of modi ?
+
+let modiAge= 70;
+let guessedAge =prompt("modi age ???");
+
+while (modiAge != guessedAge) {
+    guessedAge =prompt("try again.")
+}
+console.log("correct guessed");
