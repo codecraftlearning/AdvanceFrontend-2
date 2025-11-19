@@ -2,7 +2,6 @@
 
 function isPrime(num) {
     if (num < 2) {                              
-        ;
         return false;
     }
     for (i = 2; i <= num / 2; i++) {
@@ -36,4 +35,4 @@ function presentNo(range, search ) {
 let range = [1, 0, 3, 8, 9, 11, 12, 15, 16, 14 ];
 let search = 15;
 
-console.log(presentNo(range, search));
+console.log("item present @ index no. ",presentNo(range, search));
