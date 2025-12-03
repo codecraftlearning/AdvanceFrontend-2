@@ -17,6 +17,21 @@ console.log(sqr2());
 console.log(sqr3());
 
 
+const add = (a,d) => a+b;
+
+
+console.log(object);
+const object = {
+    name : "abc" 
+}
+console.log(object.name);
+
+
+
+
+
+ 
+
 
 
 
