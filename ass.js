@@ -20,9 +20,7 @@ function Arry(arr) {
 
 Arry([2, 5, 8, 7, 3]);
 
-// find secod largest elemet in array 
-// 1. need to sort the enire array in decending order 
-// 2. need to print [2] of the array 
+
 
 
 //find max and min in element in an array.
@@ -36,7 +34,7 @@ function maxin(arr) {
         }
     }
 
-    return max;    // 👈 IMPORTANT
+    return max;
 }
 
 function minin(arr) {
@@ -48,15 +46,31 @@ function minin(arr) {
         }
     }
 
-    return min;    // 👈 IMPORTANT
+    return min;
 }
 
 function minmixin(arr) {
-    let max = maxin(arr);   // ab correct value milegi
+console.log(arr);
+
+    arr = arr.sort((a,b)=>a-b)
+    console.log(arr);
+
+    let max = maxin(arr);
     let min = minin(arr);
 
-    console.log("Maximum =", max);
-    console.log("Minimum =", min);
+    console.log("Maxin =", max);
+    console.log("Minin=", min);
 }
 
 minmixin([45, 45, 78, 4, 5]);
+
+
+
+
+
+// sort an array using bubble sort **imp dsa quess.
+// sort an array using insertion sort **dsa imp
+// sprt an array using selection sort ** dsa imp
+// find secod largest elemet in array
+// 1. need to sort the enire array in decending order
+// 2. need to print [1] of the array 

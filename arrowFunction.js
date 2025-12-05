@@ -47,6 +47,21 @@ class Student {
 // let num = 10;
 
 
+const add = (a,d) => a+b;
+
+
+console.log(object);
+const object = {
+    name : "abc" 
+}
+console.log(object.name);
+
+
+
+
+
+ 
+
 
 
 
