@@ -30,3 +30,22 @@ bubbleSort([3,6,7,1,2,4,7,9,0,7,8,1]);
 bubbleSort([0,1,2,3,4,5,6,7,8,9,10,11]);
 bubbleSort(['adkhasb','xxx', 'ankit', 'qweqwee' ,'z']);
 
+
+
+functionname(params) {
+    
+}
+
+function selectionSort(Arr01){
+    console.log( "unsorted",arr01) ;
+    for(i=0; i<n-1, i++){
+        int
+    }
+
+
+       
+
+
+
+}
+    

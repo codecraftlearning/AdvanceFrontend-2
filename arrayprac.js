@@ -32,38 +32,10 @@ console.log(learn);
  i = 4 . 1 2 3 4 5
  */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // write a program to accept an array and iterate through the array and check in element is even then
 // divide it by 2 or if element is odd multiple by 2
 // the print the modified array .
+
 
 // function isodd(num) {
 //     if (num % 2 !== 0) {
