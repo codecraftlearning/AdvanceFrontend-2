@@ -11,11 +11,67 @@
             height: 100px;
             display: inline-block;
         }
+
+        body {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+
+        .block-a {
+            width: 400px;
+            height: 400px;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .block-b {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(238, 144, 144);
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .block-c {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 <body id="myBody">
 
-    <div id="myDiv" class="myDiv">A</div>
+
+
+
+    <div id="block_a" class="block-a" onclick="handleEvent(event)">
+
+        <div id="block_b" class="block-b" onclick="handleEvent(event)">
+            
+            <div id="block_c" class="block-c" onclick="handleEvent(event)">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- <div id="myDiv" class="myDiv">A</div>
     <div class="myDiv">B</div>
     <div class="myDiv">C</div>
     <div class="myDiv">D</div>
@@ -24,7 +80,7 @@
     <input type="text" id="myInput" placeholder="Type something..." aria-details="myDiv" oninput="addTextToParagraph(event)">
     <p id="outputParagraph">
 
-    </p>
+    </p> -->
 
 
     <script src="./main.js"></script>
