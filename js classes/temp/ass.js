@@ -50,9 +50,9 @@ function minin(arr) {
 }
 
 function minmixin(arr) {
-console.log(arr);
+    console.log(arr);
 
-    arr = arr.sort((a,b)=>a-b)
+    arr.sort((a, b) => a - b)
     console.log(arr);
 
     let max = maxin(arr);
@@ -68,9 +68,6 @@ minmixin([45, 45, 78, 4, 5]);
 
 
 
-// sort an array using bubble sort **imp dsa quess.
-// sort an array using insertion sort **dsa imp
-// sprt an array using selection sort ** dsa imp
-// find secod largest elemet in array
-// 1. need to sort the enire array in decending order
-// 2. need to print [1] of the array 
+// sort an array using bubble sort    ** imp dsa quess.
+// sort an array using insertion sort ** dsa imp.
+// sort an array using selection sort ** dsa imp.

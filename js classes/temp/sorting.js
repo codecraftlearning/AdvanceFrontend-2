@@ -31,5 +31,7 @@ function bubblesorting(arry01) {
     }
 }
 
-bubblesorting([2, 1, 3])
+bubblesorting([2, 1, 3, 5, 7, 8])
+              
+
 
