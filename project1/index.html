@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <style>
+        .myDiv {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body id="myBody">
+
+    <div id="myDiv" class="myDiv">A</div>
+    <div class="myDiv">B</div>
+    <div class="myDiv">C</div>
+    <div class="myDiv">D</div>
+
+
+    <input type="text" id="myInput" placeholder="Type something..." aria-details="myDiv" oninput="addTextToParagraph(event)">
+    <p id="outputParagraph">
+
+    </p>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
