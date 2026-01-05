@@ -1,5 +1,5 @@
 class Student {
-    public _name: String = '';
+    private _name: String = '';
     private _age: number = 0;
 
     public constructor(name?: String, age?: number) {
@@ -27,12 +27,11 @@ class Student {
     public printData(): void {
         console.log(this.name, this.age); 
     }
-
 }
 
 
 let student: Student = new Student();
-student._name = 'AnKiT SONi                    ';
+// student._name = 'AnKiT SONi                    ';
 student.printData();
 student.name = 'AnKiT SONi                    ';
 student.printData();
