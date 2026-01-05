@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: aquamarine;
+    display: flex;
+    justify-content: center;
+}
+
+
+.skillAddarticle {
+    margin-top: 2rem;
+    height: 40rem;
+    width: 40rem;
+    background-color: grey;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.addskillform {
+    height: 5rem;
+    width: 39rem;
+    margin: 0.8rem 0.25rem;
+    background-color: black;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillForm {
+    display: flex;
+    gap: 1rem;
+}
+
+.skillForm>input {
+    width: 28rem;
+    height: 2.4rem;
+    font-size: 2rem;
+}
+
+.skillForm>button {
+    height: 2.6rem;
+    font-size: 1.8rem;
+}
+
+
+.internalpanel {
+    height: 33rem;
+    width: 39.5rem;
+    background-color: black;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.panelForSkills {
+    margin: 0.3rem;
+    height: 3rem;
+    width: 38rem;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.primaryheading,
+.secondary {
+    height: 2.3rem;
+    width: 18rem;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.primaryheading {
+    color: black;
+}
+
+.primaryheading {
+    background-color: rgb(250, 19, 150);
+}
+
+.secondary {
+    background-color: aquamarine;
+    color: black;
+}
+
+
+.SKILLADDED {
+    display: flex;
+    gap: 1.2rem;
+}
+
+
+.addSkillPRIMARY {
+    height: 28.7rem;
+    width: 18rem;
+    background-color: grey;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* skill item */
+.primaryskillcreation {
+    flex-shrink: 0;
+    height: 2.5rem;
+    width: 16.5rem;
+    margin: 0.25rem 0;
+    border-radius: 5px;
+    background-color: black;
+    color: rgb(250, 19, 150);
+
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+
+.skilladdedP {
+    font-size: 1.6rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.primaryskillcreation>button {
+    background-color: rgb(250, 19, 150);
+    font-size: 1.5rem;
+}
+
+
+.addskillSECONDARY {
+    flex-shrink: 0;
+    height: 28.7rem;
+    width: 18rem;
+    background-color: grey;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.secondaryskillcreation {
+    height: 2.5rem;
+    width: 16.5rem;
+    margin: 0.25rem 0;
+    border-radius: 5px;
+    background-color: black;
+    color: aquamarine;
+
+    display: flex;
+      flex-shrink: 0;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skilladdeds {
+     flex-shrink: 0;
+    font-size: 1.6rem;
+    text-align: center;
+    width: 12rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 0%;
+}
+
+.secondaryskillcreation {
+    position: relative;
+
+}
+
+.secondaryskillcreation>button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: aquamarine;
+    font-size: 1.5rem;
+    margin-right: 0.30rem;
+}
+
+
+
+.addSkillPRIMARY::-webkit-scrollbar,
+.addskillSECONDARY::-webkit-scrollbar {
+    width: 8px;
+}
+
+.addSkillPRIMARY::-webkit-scrollbar-track,
+.addskillSECONDARY::-webkit-scrollbar-track {
+    background: #010101;
+    border-radius: 10px;
+}
+
+.addSkillPRIMARY::-webkit-scrollbar-thumb,
+.addskillSECONDARY::-webkit-scrollbar-thumb {
+    background: #feffffcc;
+    border-radius: 10px;
+}
+
+.addSkillPRIMARY::-webkit-scrollbar-thumb:hover {
+    background: rgb(250, 19, 150);
+}
+
+.addskillSECONDARY::-webkit-scrollbar-thumb:hover {
+    background: aquamarine;
+    
+}
+
