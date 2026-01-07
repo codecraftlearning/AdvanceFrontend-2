@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .drag-zone {
+            width: 200px;
+            height: 500px;
+            border: 1px solid black;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding: 12px;
+            background-color: rgb(198, 255, 255);
+            overflow-y: auto;
+        }
+
+        .drop-zone {
+            width: 200px;
+            height: 500px;
+            border: 1px solid black;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding: 12px;
+            background-color: rgb(255, 239, 197);
+            overflow-y: auto;
+        }
+
+        .dragging-over {
+            background-color: rgba(255, 239, 197, 0.521);
+            border-style: dashed;
+        }
+
+        .zone-item {
+            border-radius: 8px;
+            padding: 12px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-size: large;
+            cursor: grab;
+            box-shadow: 2px 2px 8px grey;
+            background-color: rgb(139, 201, 255);
+        }
+
+    </style>
+
+    
+</head>
+<body>
+
+    <div id="dragZone" class="drag-zone">
+    </div>
+
+    <div id="dropZone" class="drop-zone" ondragover="dragingOver(event)" ondragleave="dragingLeft()" ondrop="handleElementDrop(event)">
+        
+    </div>
+
+    <script>
+
+        // let draggingElement = undefined;
+
+        function dragStarted(event) {
+            // draggingElement = event.target;
+            event.dataTransfer.setData("text/plain", event.target.id);
+        }
+
+        function dragingOver(event) {
+            event.preventDefault();
+            event.target.classList.add("dragging-over");
+        }
+
+        function dragingLeft() {
+           event.target.classList.remove("dragging-over");
+        }
+
+        function handleElementDrop(event) {
+            const id = event.dataTransfer.getData("text/plain");
+            const el = document.getElementById(id);
+            // const el = draggingElement;
+            event.target.appendChild(el);
+            // draggingElement = undefined;
+            dragingLeft();
+        }
+
+        function createZoneItem(id, value) {
+            const zoneItem = document.createElement('div');
+            zoneItem.id = id;
+            zoneItem.innerText = value;
+            zoneItem.classList.add('zone-item');
+            zoneItem.draggable = true;
+            zoneItem.ondragstart = dragStarted;
+            return zoneItem;
+        }
+
+
+        function init() {
+            const dragZone = document.getElementById("dragZone");
+            const totalItemCount = 10;
+            for(let i =0; i<10; i++) {
+                dragZone.appendChild(createZoneItem(i, `zone item ${i+1}`));
+            }
+        }
+
+        init();
+    </script>
+</body>
+</html>
