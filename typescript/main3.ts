@@ -18,7 +18,7 @@ class Human {
     private _age: number = -1;
     private _gender: GenderType;
     private _height: string = '';
-    private _weight: string = '';
+    private _weight: string = ''; 
 
     public constructor(name: string, age: number, gender: GenderType, height: number, weight: number) {
         this.name = name;
