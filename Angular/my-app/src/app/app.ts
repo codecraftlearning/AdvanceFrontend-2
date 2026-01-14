@@ -1,30 +1,18 @@
 import { CommonModule, UpperCasePipe } from '@angular/common';
-import { Component, OnInit, signal } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Input } from "./shared/input/input";
+import { FormsModule } from './modules/forms/forms-module';
 
 @Component({
   selector: 'ap-root',
-  imports: [RouterOutlet, UpperCasePipe, CommonModule], 
+  standalone: true,
+  imports: [CommonModule, Input, FormsModule], 
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
-export class App implements OnInit {
+export class App  {
   protected readonly title = signal('my-app');
-  myName: string = 'bhavishya';
-  myTeacher: string = 'ankit';
-
-  fruits: string[] = ['apple', 'bannana', 'kiwi', 'pineapple', 'mango']
-
-  constructor() {
-
-
-}
-  ngOnInit(): void {
-    let ele = document.getElementById("id01");
-    if (!!ele) {
-      ele.innerText = this.myName.toUpperCase();
-    }
-  }
 }
 
 
