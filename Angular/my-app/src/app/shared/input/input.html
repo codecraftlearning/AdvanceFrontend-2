@@ -1,1 +1,12 @@
-<input type="text" name="" id="">
+<div>
+  <label [for]="this.id">{{ this.label }}</label>
+  <input
+    [id]="this.id"
+    [type]="this.type"
+    [name]="this.name"
+    [placeholder]="this.placeholder"
+    [(ngModel)]="this.value"
+  />
+
+  {{this.value}}
+</div>
