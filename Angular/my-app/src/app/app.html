@@ -1,4 +1,37 @@
-<app-input></app-input>
+<app-input
+  id="full_name_id"
+  name="fullName"
+  label="Full Name"
+  placeholder="Your name"
+  type="text"
+  (inputEvent)="this.fullName = $event"
+></app-input>
 
-<app-form1></app-form1>
-<app-form2></app-form2>
+<app-input
+  id="address_id"
+  name="address"
+  label="Address"
+  placeholder="Your address"
+  type="text"
+  (inputEvent)="this.address = $event"
+></app-input>
+
+<app-input
+  id="age_id"
+  name="age"
+  label="Age"
+  placeholder="Your age"
+  type="number"
+  (inputEvent)="this.age = $event"
+></app-input>
+
+<app-input
+  id="password_id"
+  name="password"
+  label="Password"
+  placeholder="Strong password"
+  type="password"
+  (inputEvent)="this.password = $event"
+></app-input>
+
+<button (click)="this.printData()">View Data</button>

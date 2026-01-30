@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Form1 } from './form1/form1';
-import { Input } from '../../shared/input/input';
+import { CustomInput } from '../../shared/input/input';
 import { Form2 } from './form2/form2';
 import { Form3 } from './form3/form3';
 
@@ -15,7 +15,7 @@ import { Form3 } from './form3/form3';
   ],
   imports: [
     CommonModule,
-    Input
+    CustomInput
   ],
   exports: [
     Form1,

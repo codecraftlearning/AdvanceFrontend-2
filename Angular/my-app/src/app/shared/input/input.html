@@ -1,4 +1,4 @@
-<div>
+<div class="custom-input">
   <label [for]="this.id">{{ this.label }}</label>
   <input
     [id]="this.id"
@@ -6,7 +6,6 @@
     [name]="this.name"
     [placeholder]="this.placeholder"
     [(ngModel)]="this.value"
+    (input)="this.updateValue()"
   />
-
-  {{this.value}}
 </div>

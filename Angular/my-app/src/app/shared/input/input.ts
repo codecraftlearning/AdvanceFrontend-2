@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+
+type CustomInputType = 'text' | 'number' | 'password';
 
 @Component({
   selector: 'app-input',
@@ -9,11 +11,30 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './input.html',
   styleUrl: './input.scss',
 })
-export class Input {
-  public id: string = 'fullName_id';
-  public label: string = 'Full Name';
-  public type: string = 'password';
-  public name: string = 'fullName';
-  public placeholder: string = 'your name';
-  public value: string = 'current Value';
+export class CustomInput {
+  @Input()
+  public id: string = '';
+
+  @Input()
+  public label: string = '';
+  
+  @Input()
+  public type: CustomInputType = 'text';
+  
+  @Input()
+  public name: string = '';
+  
+  @Input()
+  public placeholder: string = '';
+  
+  @Input()
+  public value: string | number = '';
+
+  @Output()
+  public inputEvent: EventEmitter<string | number> = new EventEmitter();
+
+
+  public updateValue(): void {
+    this.inputEvent.emit(this.value);
+  }
 }
