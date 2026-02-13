@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, DoCheck, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 type CustomInputType = 'text' | 'number' | 'password';
@@ -11,7 +11,7 @@ type CustomInputType = 'text' | 'number' | 'password';
   templateUrl: './input.html',
   styleUrl: './input.scss',
 })
-export class CustomInput {
+export class CustomInput implements OnChanges, OnInit, DoCheck{
   @Input()
   public id: string = '';
 
@@ -33,6 +33,21 @@ export class CustomInput {
   @Output()
   public inputEvent: EventEmitter<string | number> = new EventEmitter();
 
+  constructor() {
+
+  }
+
+  public ngOnChanges(changes: SimpleChanges): void {
+    
+  }
+
+  public ngOnInit(): void {
+    
+  }
+
+  public ngDoCheck(): void {
+    
+  }
 
   public updateValue(): void {
     this.inputEvent.emit(this.value);
