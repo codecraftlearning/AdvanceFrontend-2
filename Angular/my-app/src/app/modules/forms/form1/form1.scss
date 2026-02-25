@@ -1,0 +1,47 @@
+
+
+.login-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+
+    .form-area {
+        padding: 10px;
+
+        .form-heading {
+            color: rgb(37, 37, 37);
+            font-weight: 500;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .login-form {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+
+            .form-item {
+                display: flex;
+                justify-content: center;
+                gap: 8px;
+
+                label {
+                    width: 100px;
+                }
+                input {
+                    width: 300px;
+                }
+
+                .form-error {
+                    font-size: xx-small;
+                    color: red;
+                }
+            }
+        }
+        
+    }
+
+}

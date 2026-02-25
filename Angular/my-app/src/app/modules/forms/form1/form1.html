@@ -1,0 +1,45 @@
+<section class="login-section">
+  <fieldset class="form-area">
+    <legend class="form-heading">Login Form</legend>
+
+    <form #loginForm="ngForm" class="login-form" (ngSubmit)="onSubmit(loginForm)">
+      <div class="form-item">
+        <label for="emailInput">Email:</label>
+        <div>
+          <input
+            #emailInput="ngModel"
+            name="email"
+            [(ngModel)]="this.user.email"
+            type="email"
+            id="emailInput"
+            placeholder="abc@example.com"
+            required
+          />
+          @if (emailInput.touched && emailInput.invalid) {
+            <div class="form-error">Required*</div>
+          } 
+        </div>
+      </div>
+      <div class="form-item">
+        <label for="passwordinput">Passowrd:</label>
+        <div>
+          <input
+            #passwordinput="ngModel"
+            name="passowrd"
+            [(ngModel)]="this.user.password"
+            type="password"
+            id="passwordinput"
+            placeholder="xxxxxxxx"
+            required
+          />
+          @if (passwordinput.touched && passwordinput.invalid) {
+            <div class="form-error">Required*</div>
+          } 
+        </div>
+      </div>
+      <div class="form-item">
+        <input type="submit" />
+      </div>
+    </form>
+  </fieldset>
+</section>
